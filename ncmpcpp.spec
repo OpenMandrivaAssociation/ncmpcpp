@@ -1,5 +1,5 @@
 %define name            ncmpcpp
-%define version         0.4.1
+%define version         0.5
 %define release         %mkrel 1
 
 Summary:                An ncurses mpd client inspired by ncmpc
@@ -16,6 +16,8 @@ BuildRequires:  ncursesw-devel
 BuildRequires:  pkgconfig
 BuildRequires:  libmpdclient-devel
 BuildRequires:  curl-devel
+BuildRequires:  taglib-devel
+BuildRequires:  fftw-devel
 
 %description
 Ncmpcpp has UI very similar to ncmpc's one, but it provides new useful features
