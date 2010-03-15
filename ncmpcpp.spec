@@ -1,5 +1,5 @@
 %define name            ncmpcpp
-%define version         0.5.1
+%define version         0.5.2
 %define release         %mkrel 1
 
 Summary:                An ncurses mpd client inspired by ncmpc
