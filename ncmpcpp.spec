@@ -1,19 +1,19 @@
-Summary:                An ncurses mpd client inspired by ncmpc
-Name:                   ncmpcpp
-Version:                0.5.8
-Release:                %mkrel 1
-License:                GPLv2+
-Group:                  Sound
-URL:                    http://unkart.ovh.org/ncmpcpp
-Source:                 http://unkart.ovh.org/ncmpcpp/%{name}-%{version}.tar.bz2
-BuildRoot:              %{_tmppath}/%{name}-%{version}-buildroot
-BuildRequires:  ncurses-devel
-BuildRequires:  ncursesw-devel
-BuildRequires:  pkgconfig
-BuildRequires:  libmpdclient-devel
-BuildRequires:  curl-devel
-BuildRequires:  taglib-devel
-BuildRequires:  fftw-devel
+Summary:	An ncurses mpd client inspired by ncmpc
+Name:		ncmpcpp
+Version:	0.5.8
+Release:	%mkrel 2
+License:	GPLv2+
+Group:		Sound
+URL:		http://unkart.ovh.org/ncmpcpp
+Source:		http://unkart.ovh.org/ncmpcpp/%{name}-%{version}.tar.bz2
+BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
+BuildRequires:	ncurses-devel
+BuildRequires:	ncursesw-devel
+BuildRequires:	pkgconfig
+BuildRequires:	libmpdclient-devel
+BuildRequires:	curl-devel
+BuildRequires:	taglib-devel
+BuildRequires:	fftw-devel
 
 %description
 Ncmpcpp has UI very similar to ncmpc's one, but it provides new useful features
@@ -29,16 +29,14 @@ browser and other minor functions.
 %make
 
 %install
-rm -rf %buildroot
+%__rm -rf %{buildroot}
 %makeinstall
 
-%find_lang %name
-
 %clean
-rm -rf %buildroot
+%__rm -rf %{buildroot}
 
-%files -f %name.lang
+%files
 %defattr(-,root,root)
 %doc AUTHORS NEWS COPYING
-%_bindir/%{name}
-%_mandir/man1/%{name}.*
+%{_bindir}/%{name}
+%{_mandir}/man1/%{name}.*
