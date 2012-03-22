@@ -1,15 +1,13 @@
 Summary:	An ncurses mpd client inspired by ncmpc
 Name:		ncmpcpp
-Version:	0.5.8
-Release:	%mkrel 2
+Version:	0.5.9
+Release:	%mkrel 1
 License:	GPLv2+
 Group:		Sound
 URL:		http://unkart.ovh.org/ncmpcpp
 Source:		http://unkart.ovh.org/ncmpcpp/%{name}-%{version}.tar.bz2
-BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
 BuildRequires:	ncurses-devel
 BuildRequires:	ncursesw-devel
-BuildRequires:	pkgconfig
 BuildRequires:	libmpdclient-devel
 BuildRequires:	curl-devel
 BuildRequires:	taglib-devel
@@ -36,7 +34,6 @@ browser and other minor functions.
 %__rm -rf %{buildroot}
 
 %files
-%defattr(-,root,root)
 %doc AUTHORS NEWS COPYING
 %{_bindir}/%{name}
 %{_mandir}/man1/%{name}.*
