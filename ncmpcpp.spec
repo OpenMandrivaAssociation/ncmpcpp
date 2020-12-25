@@ -22,7 +22,7 @@ song format, items filtering, last.fm support, ability to sort playlist, local
 filesystem browser and other minor functions.
 
 %files
-%doc doc/config doc/bindings AUTHORS COPYING
+%doc doc/config doc/bindings AUTHORS COPYING CHANGELOG.md
 %{_bindir}/%{name}
 %{_mandir}/man1/%{name}.*
 
