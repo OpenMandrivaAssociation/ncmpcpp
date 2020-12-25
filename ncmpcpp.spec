@@ -1,6 +1,6 @@
 Summary:	An ncurses mpd client inspired by ncmpc
 Name:		ncmpcpp
-Version:	0.8.2
+Version:	0.9.1
 Release:	1
 License:	GPLv2+
 Group:		Sound
