@@ -14,6 +14,7 @@ BuildRequires:	pkgconfig(libcurl)
 BuildRequires:	pkgconfig(ncurses)
 BuildRequires:	pkgconfig(ncursesw)
 BuildRequires:	pkgconfig(taglib)
+BuildRequires:  pkgconfig(zlib)
 
 %description
 Ncmpcpp has UI very similar to ncmpc's one, but it provides new useful
