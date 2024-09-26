@@ -1,11 +1,11 @@
 Summary:	An ncurses mpd client inspired by ncmpc
 Name:		ncmpcpp
-Version:	0.9.2
-Release:	2
+Version:	0.10
+Release:	1
 License:	GPLv2+
 Group:		Sound
 Url:		http://rybczak.net/ncmpcpp/
-Source0:	http://rybczak.net/ncmpcpp/stable/%{name}-%{version}.tar.bz2
+Source0:	https://github.com/ncmpcpp/ncmpcpp/archive/%{version}/%{name}-%{version}.tar.gz
 BuildRequires:	boost-devel >= 1.60.0
 BuildRequires:	readline-devel
 BuildRequires:	pkgconfig(fftw3)
@@ -30,7 +30,7 @@ filesystem browser and other minor functions.
 #-----------------------------------------------------------------------------
 
 %prep
-%setup -q
+%autosetup -p1
 
 %build
 %configure
