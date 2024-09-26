@@ -33,6 +33,7 @@ filesystem browser and other minor functions.
 %autosetup -p1
 
 %build
+autoreconf -fiv
 %configure
 %make_build
 
