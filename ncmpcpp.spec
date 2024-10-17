@@ -4,7 +4,7 @@ Version:	0.10
 Release:	1
 License:	GPLv2+
 Group:		Sound
-Url:		http://rybczak.net/ncmpcpp/
+Url:		https://rybczak.net/ncmpcpp/
 Source0:	https://github.com/ncmpcpp/ncmpcpp/archive/%{version}/%{name}-%{version}.tar.gz
 BuildRequires:	boost-devel >= 1.60.0
 BuildRequires:	readline-devel
