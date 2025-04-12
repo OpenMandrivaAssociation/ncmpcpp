@@ -15,6 +15,10 @@ BuildRequires:	pkgconfig(ncurses)
 BuildRequires:	pkgconfig(ncursesw)
 BuildRequires:	pkgconfig(taglib)
 BuildRequires:  pkgconfig(zlib)
+BuildSystem:	autotools
+
+%patchlist
+ncmpcpp-boost-1.88.patch
 
 %description
 Ncmpcpp has UI very similar to ncmpc's one, but it provides new useful
@@ -27,15 +31,5 @@ filesystem browser and other minor functions.
 %{_bindir}/%{name}
 %{_mandir}/man1/%{name}.*
 
-#-----------------------------------------------------------------------------
-
-%prep
-%autosetup -p1
-
-%build
+%prep -a
 autoreconf -fiv
-%configure
-%make_build
-
-%install
-%make_install
